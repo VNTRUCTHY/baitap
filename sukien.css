@@ -1,0 +1,141 @@
+*{
+
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+img.logo {
+    width: 80px !important;
+    height: 80px !important;
+    border-radius: 10px;
+    
+}
+#header ul li:hover a {
+    color: yellow;
+}
+.navbar-light .navbar-brand:hover {
+    color: red;
+}
+.dropdown-item {
+    padding: 0;
+    color: #000 !important;
+    padding-left: 14px;
+    margin-bottom: 8px;
+}
+
+.navbar-light .navbar-brand {
+    color: #fff;
+}
+
+#header .bg-dark {
+    background-color: #741416 !important;
+    border-bottom: 3px solid #F4D678;
+}
+
+#content h4 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 24px;
+    margin-top: 38px;
+}
+#content h6 {
+    font-weight: bold;
+    margin-top: 8px;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+#footer {
+    border-top: 3px solid #F4D678;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    min-height: 600px;
+    background-image: url(images/bg_2.jpg);
+}
+#footer h5{
+    color: black;
+    margin-top: 46px;
+    font-weight: bold;
+}
+#footer p {
+    color: #000;  
+}
+ul.dropdown-menu li a:hover {
+    color: yellow !important;
+    background-color: #999;
+}
+ul.dropdown-menu li {
+    margin-left: 0 !important;
+}
+#header ul li{
+    display: block;
+    margin-left: 26px;
+}
+#header ul li a{
+    color: #fff;
+    font-size: 13px;
+}
+
+.navbar-nav .dropdown-menu {
+    width: 350%;
+    float: none;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    [class*="col-6"] {
+        width: 50%;
+    }
+    img.logo {
+        margin-left: 24px;
+    }
+    #header ul li{
+        margin-left: 38px;
+    }
+    #header ul li a{
+        font-size: 14px;
+        color: #fff;
+    }
+    .navbar-toggler { 
+        background-color: orange;
+        font-size: 20px;
+    }
+    .navbar-nav .dropdown-menu {
+        width: 300%;
+        float: none;
+    }
+    #content h4 {
+        font-weight: bold;
+        font-size: 26px;
+    } 
+} 
+
+@media only screen and (max-width: 767px) {
+    [class*="col-12"] {
+        width: 100%;
+    }
+    img.logo {
+        margin-left: 20px;
+    }
+    #header ul li {
+        margin-left: 24px;
+    }
+    #header ul li a{
+        color: #fff;
+        font-size: 12px;
+        
+    }
+    .navbar-toggler { 
+        background-color: orange;
+        font-size: 18px;
+        margin-right: 12px;
+    }
+    .navbar-nav .dropdown-menu {
+        width: 200%;
+        float: none;
+    }
+    #content img {
+        width: 100%;
+    }
+}    

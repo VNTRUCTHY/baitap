@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+img.logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    
+}
+
+body {
+    background-color: #741416;
+    width: 100%;
+    height: 100%;
+}
+.signup{
+    width: 80%;   
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 5rem;
+}
+.signup a {
+    text-decoration: none;
+    color: #fff;
+}
+.input input {
+    width: 50%;
+    height: 50px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 16px;
+    padding-left: 10px;
+    
+    
+}
+button {
+    text-align: center;
+    width: 50%;
+    height: 40px;
+    margin-left: 0 auto;
+    border-radius: 10px;
+    background-color: #F4D678;
+    
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    body {
+        background-color: #741416;
+        width: 100%;
+        height: 100%;
+    }
+    .signup{
+           
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 5rem;
+        
+    }
+    
+    .input input {
+        width: 90%;
+        margin-bottom: 12px;
+        border-radius: 10px;
+        color: #000;
+        font-size: 16px;
+        padding-left: 10px;
+        
+        
+    }
+    button {
+        background-color: #F4D678;
+        text-align: center;
+        width: 90%;
+        height: 40px;
+        margin-left: 0 auto;
+        border-radius: 10px;
+        
+        
+    }
+}
+@media only screen and (max-width: 767px) {
+    body {
+        background-color: #741416;
+        width: 100%;
+        height: 100%;
+    }
+    .signup{
+           
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 5rem;
+        width: 70%;
+    }
+    
+    .input input {
+        width: 90%;
+        margin-bottom: 12px;
+        border-radius: 10px;
+        color: #000;
+        font-size: 16px;
+        padding-left: 10px;
+        
+        
+    }
+    button {
+        background-color: #F4D678;
+        text-align: center;
+        width: 90%;
+        height: 40px;
+        margin-left: 0 auto;
+        border-radius: 10px;
+        
+        
+    }
+}

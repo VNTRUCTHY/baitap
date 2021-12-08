@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Đăng kí</title>
+    <link rel="stylesheet" href="dangki.css">
+</head>
+<body>
+    <div id="container">
+        <div class="signup">
+            <div class="singUp">
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo" src="images/logo.png">
+                </a>
+                <form onsubmit="return myFunction()">
+                    <div class="input">
+                        <input type="text" placeholder="Họ và tên" id="name">
+                        <p id="error-name" style="color: #fff"></p>
+                        <input type="email" placeholder="Email" id="email">
+                        <p id="error-email" style="color: #fff"></p>
+                        <input type="password" placeholder="Mật khẩu" id="password">
+                        <p id="error-password" style="color: #fff"></p>
+                    </div>
+                    <p  style="color: #fff;">
+                        <input type="checkbox"> 
+                        <span style="color: #F4D678;">Đồng ý với điều khoản của </span>
+                        KDL Tam Chúc
+                    </p>
+                    <button type="submit">Đăng Kí</button>
+                </form>
+                <br>
+                <br>
+                <p style="color: #fff;">
+                    <span style="color: #F4D678;">Đã có tài khoản? </span>
+                    <a href="dangnhap.html">Đăng nhập tại đây</a>
+                </p>
+            </div>
+        </div>
+    </div> 
+
+    <script type="text/javascript">
+        function myFunction() {
+            isValid = true;
+            var name = document.getElementById("name").value;
+            if (name == ""){
+                document.getElementById("error-name").innerHTML = "Yêu cầu nhập Họ Tên";
+                isValid = false;
+            }
+
+            var email = document.getElementById("email").value;
+            if (email == ""){
+                document.getElementById("error-email").innerHTML = "Yêu cầu nhập Email";
+                isValid = false;
+            }
+
+            var password = document.getElementById("password").value;
+            if (email == ""){
+                document.getElementById("error-password").innerHTML = "Yêu cầu nhập Password";
+                isValid = false;
+            }
+
+            return isValid;
+        }
+    </script>   
+</body>
+</html>
